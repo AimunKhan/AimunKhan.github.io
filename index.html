@@ -15,9 +15,9 @@
     <div class="navbar">
       <a href="#about">About</a>
       <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
       <a href="#other">Other Work</a>
       <a href="#contact">Contact</a>
     </div>
@@ -63,7 +63,7 @@
 
 
       <!-- BEGIN ABOUT -->
-      <div class="row white box-shadow">
+      <div class="row">
         <div class="side-content"></div>
         <div class="main-content">
           <div class="content-header">
@@ -72,7 +72,9 @@
           </div>
           <div class="content-body">
             <p>I'm interesting in opportunities to do Machine Learning related work. I'm a UT student double majoring in Electrical and Computer Engineering as well as Mathematics. </p>
-            <p>Outisde of my career interests, I have multiple interests in the humanities. I'm a history minor and I love to play the guitar. I'm also a debate coach. </p>
+            <p>Outisde of my career interests, I've been coaching high school debate ever since I graduated. In addition to other accolades, I've coached 23 bids to the Tournament of Champions, including the youngest TOC qualifier of the 2018-2019 season. </p>
+            <p>I'm also a writer for Towards Data Science, where I write about machine learning projects that I've done. You can read some of my work here and here.</p>
+            <p><a href=#>Here is a link to my resume</a></p>
           </div>
         </div>
         <div class="side-content"></div>
@@ -87,8 +89,8 @@
             <a class="anchor" name="education"></a>
             <h2>Education</h2>
           </div>
-          <!--<div class="content-body">
-            <div class="card">
+          <div class="content-body">
+            <!--<div class="card">
               <div class="card-header">
                 <h4>University of Texas at Austin <span class="job-title"></span></h4>
               </div>
@@ -172,8 +174,36 @@
       </div>
       <!-- END EDUCATION -->
 
+      <!-- BEGIN SKILLS -->
+      <div class="row">
+        <div class="side-content"></div>
+        <div class="main-content">
+          <div class="content-header">
+            <a class="anchor" name="skills"></a>
+            <h2>Skills</h2>
+          </div>
+          <div class="content-body">
+            <ul class="ul-skills">
+              <li class="li-skills">Machine Learning</li>              
+              <li class="li-skills">DevOps & CI/CD</li>
+              <li class="li-skills">Python</li>
+              <li class="li-skills">C</li>
+              <li class="li-skills">C++</li>
+              <li class="li-skills">Java</li>
+              <li class="li-skills">Bash</li>
+              <li class="li-skills">Docker</li>
+              <li class="li-skills">Pandas</li>
+              <li class="li-skills">Numpy</li>
+              <li class="li-skills">Javascript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="side-content"></div>
+      </div>
+      <!-- END SKILLS -->
+
       <!-- BEGIN EXPERIENCE -->
-      <div class="row white box-shadow">
+      <div class="row">
         <div class="side-content"></div>
         <div class="main-content">
           <div class="content-header">
@@ -181,7 +211,7 @@
             <h2>Technical Experience</h2>
           </div>
           <!-- CARD #1 -->
-          <div class="content-body">
+          <!-- <div class="content-body">
             <div class="card">
               <div class="card-header">
                 <h4>Cloud Services Engineer Intern, Palo Alto Networks <span class="job-title">May 2019 - August 2019</span></h4>
@@ -189,7 +219,7 @@
               <div class="card-content">
                 <p>TBD</p>
               </div>
-            </div>
+            </div>-->
 
           <!-- CARD #2 -->
 
@@ -235,36 +265,37 @@
             <!-- CARD #1 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="http://placehold.it/250x350">
+                <img src="images/NBA.png">
               </div>
               <div class="project-content">
                 <h4>Basketball Predictive Analytics</h4>
-                <p>Using a dataset of all NBA shot data from 2014 to 2015, we created new categories of players that extend beyond position, and compared how effectively these players score on each other.</p>
-                <p>Some technologies we used includes D3 and scikit-learn.</p>
-                <a href="https://aimunkhan.github.io/d3-graph-attack/index.html">Check out the force directed graph that we created</a>
+                <p>Some friends and I found a dataset that contained details of every individual shot taken in the NBA during the 2014-2015 regular season, including the distance from the basket, the closest defender, and the result of the shot. After extensive cleaning of this dataset, we created some new aggregate datasets from this individual shot data and analyzed how players match up against each other. We created a tool to visualize these matchups. Finally, we used this data to explore the hot hand phenomenon. </p>
+                <p>In addition to Scikit-learn and Pandas, this project used D3 to visualize our findings.</p>
+                <a href="https://towardsdatascience.com/insights-from-raw-nba-shot-log-data-and-an-exploration-of-the-hot-hand-phenomenon-1f1c6c63685a">Here is an article detailing the project from start to finish</a>
+                <a href="https://aimunkhan.github.io/d3-graph-attack/index.html">Check out the force directed graph that we created to visualized player matchups</a>
               </div>
             </div>
             <!-- CARD #2 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="http://placehold.it/250x350">
+                <img src="images/genres.png">
               </div>
               <div class="project-content">
-                <h4>Music Prediction Algorithm</h4>
-                <p>We implemented an unsupervised learning algorithm that takes songs that an individual likes and returns new songs that the algorithms predicts the user would enjoy listening to.</p>
-                <p>Some methods we used includes PCA.</p>
-                <a href="#https://medium.com/@khan.aimun/music-to-my-ears-an-unsupervised-approach-to-user-specific-song-recommendation-6c291acc2c12">Check out an article detailing the project from start to finish</a>
+                <h4>Music Taste Prediction Algorithm</h4>
+                <p>I found a 280 GB dataset that contained features of a million songs. A team of my classmates and I did extensive feature engineering to reduce the dataset down to a manageable size. We then designed and implemented an unsupervised learning algorithm that takes a list of songs that an individual likes as input and returns new songs that the algorithms predicts the user would enjoy listening to. </p>
+                <p>We imported the data to a virtual machine on AWS. This project involved use of Pandas, Numpy, and Scikit-learn.</p>
+                <a href="#https://towardsdatascience.com/music-to-my-ears-an-unsupervised-approach-to-user-specific-song-recommendation-6c291acc2c12">Check out an article explaining the project from start to finish</a>
               </div>
             </div>
             <!-- CARD #3 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="http://placehold.it/250x350">
+                <img src="images/schwadio.jpg">
               </div>
               <div class="project-content">
-                <h4>Multi-Factor Voice Authentication</h4>
-                <p>We won third place at HackTX as well as first place for the security challenge. We did multi-factor voice authentication.</p>
-                <p>We used FireBase, Azure, and Tensorflow.</p>
+                <h4>HackTX 2018 winner - Multi-Factor Voice Authentication Client</h4>
+                <p>At HackTX, my team won first place in the Charles Schwab Security Challenge, as well as third place grand prize. Our goal was to implement a passwordless alternative to authentication. Our solution was to design a multi-factor voice authentication client. Our tool prompts the user to speak the answer to a security question, and then verifies the identity of the speaker using the recorded audio as well as the content of the answer. A prototype of this tool was demo'd during finals of the hackathon.</p>
+                <p>We used FireBase, Azure, and Tensorflow to implement this tool.</p>
                 <a href="https://devpost.com/software/schwadio">Here is a link to a demo of our project</a>
               </div>
             </div>
@@ -275,8 +306,8 @@
               </div>
               <div class="project-content">
                 <h4>Cloud Computing Research Paper</h4>
-                <p>We wrote a paper about the implementation and impacts of Cloud Computing on society. This paper was presented to a group of UT undergraduate students.</p>
-                <a href="#">Paper Link TBD</a>
+                <p>As part of a research project, a team of students conducted research on the significance of cloud computing. Our goal was to communicate both the implementation and the impact of cloud computing on technology and society to both technical and non-technical audiences. We compiled this research into a series of papers, one detailing the technical description of Cloud Computing, and one detailing the impact report. These papers were presented to a group of UT undergraduate students.</p>
+                <a href="#">Paper Links TBD</a>
               </div>
             </div>
             <!-- CARD #5 -->
@@ -286,54 +317,54 @@
               </div>
               <div class="project-content">
                 <h4>Inter-App Communication Research Paper</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="#">Link Text</a>
+                <p>As part of a graduate class I took at UT, Mobile Computing, I wrote a research paper with a group of grad students. In this paper, we explored some of the differences in implementations of inter-app communication in iOS and Android development. Most research in the area of mobile computing defaults to Android as its scope of research, so we wanted to explore the advantages of including the iOS platform in these areas of research.</p>
+                <a href="#">Paper Link TBD</a>
               </div>
             </div>
             <!-- CARD #6 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="http://placehold.it/250x350">
+                <img src="images/WholesomeHacks.png">
               </div>
               <div class="project-content">
-                <h4>Freetail Hackers Spring Hackathon Challenge</h4>
-                <p>We won second place at a Hackathon making an anti-anxiety app.</p>
-                <p>Some of the challenge here was working with a brand new library and finish an entire app during an eight hour Hackathon.</p>
+                <h4>Freetail Hackers Spring Hackathon 2nd place - Wholesome Studio</h4>
+                <p>We won second place at this Hackathon by making an anti-anxiety web app. Our goal was to create a tool for stressed people to use to calm down by giving them something to focus on with calming audio and visuals. For this web app, we created all of the audio from scratch and used paper.js and howler.js to implement the visuals and connect the audio to these shapes.</p>
+                <p>Some of the challenges in working on this project including working with unfamiliar JavaScript libraries and finishing an entire deployable application during an eight hour timeframe.</p>
                 <a href="https://aimunkhan.github.io/wholesome-studio/index.html">You can check out our finished product here</a>
               </div>
             </div>
             <!-- CARD #7 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="http://placehold.it/250x350">
+                <img src="images/Classes.png">
               </div>
               <div class="project-content">
                 <h4>Web Scraping Registration Tool</h4>
-                <p>I made a Python tool to text me whenever a closed class that I wanted was open. This tool scraped the UT registration page.</p>
-                <p>This project involved deployment questions like Docker and AWS.</p>
+                <p>For my own personal use, I designed and deployed a small Python app to text me via Twilio whenever a closed class that I wanted to register for opened up. This tool used Selenium and Beautiful Soup to scrape the UT registration page, using the Cryptography library to securely log in. This script was deployed on AWS in a Docker container.</p>
               </div>
             </div>
             <!-- CARD #8 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="http://placehold.it/250x350">
+                <img src="images/Fitbit.png">
               </div>
               <div class="project-content">
-                <h4>Fitbit Heart Monitor</h4>
-                <p>We made Fitbit app to text location to emergency contact during heart attacks. We interfaced sensors to poll heart rate from fitbit and store on web app.</p>
+                <h4>HackTX 2017 - Fitbit Heart Monitor</h4>
+                <p>At my first Hackathon, my team designed a Fitbit app and web app to communicate and text an emergency contact the location of the user whenever the fitbit detected a sharp increase in heart rate. We interfaced sensors on a Fitbit Ionic to poll heart rate data from the fitbit and store it on the web app where users could set up notifications. As my first Hackathon, I learned a lot about quickly designing and implementing solutions to a problem using unfamiliar tools. I had never programmed a fitbit app or used JavaScript before, so I had to quickly pick up these skills at the hackathon.</p>
+                <!--<p>As my first Hackathon, I learned a lot about quickly designing and implementing solutions to a problem using unfamiliar tools. I had never programmed a fitbit app or used JavaScript before, so I had to quickly pick up these skills at the hackathon.</p>-->
               </div>
             </div>
             <!-- CARD #9 -->
             <div class="project-card">
               <div class="project-image">
-                <img src="http://placehold.it/250x350">
+                <img src="images/Tiwario.png">
               </div>
               <div class="project-content">
                 <h4>Embedded Systems Video Game</h4>
-                <p>We designed an interrupt-based Mario style video game on TI TM4C microcontroller. We Implemented logic for pressure-sensitive jumping and parallax background.</p>
+                <p>A friend and I designed and programmed an interrupt-based Mario style video game on TI TM4C microcontroller. The game was coded in C, and we created all of the pixel art for the game. We Implemented logic for pressure-sensitive jumping (allowing the length of the jump to be changed by the length of the button press based on a simple physics engine) and parallax background.</p>
               </div>
             </div>
-            <!-- CARD #X -->
+            <!-- CARD #X 
             <div class="project-card">
               <div class="project-image">
                 <img src="http://placehold.it/250x350">
@@ -343,7 +374,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <a href="#">Link Text</a>
               </div>
-            </div>
+            </div>-->
 
           </div>
         </div>
@@ -351,8 +382,8 @@
       </div>
       <!-- END PROJECTS -->
 
-      <!-- BEGIN SKILLS -->
-      <div class="row white box-shadow">
+      <!-- BEGIN SKILLS
+      <div class="row">
         <div class="side-content"></div>
         <div class="main-content">
           <div class="content-header">
@@ -374,7 +405,7 @@
         </div>
         <div class="side-content"></div>
       </div>
-      <!-- END SKILLS -->
+      END SKILLS -->
 
       <!-- BEGIN OTHER EXPERIENCE -->
       <div class="row">
@@ -401,18 +432,6 @@
           <!-- CARD #2 -->
             <div class="card">
               <div class="card-header">
-                <h4>Peer Advisor <span class="job-title">Jan 2019 - Present</span></h4>
-              </div>
-              <div class="card-content">
-                <ul>
-                  <li>TBD</li>
-                  <li>TBD</li>
-                </ul>
-              </div>
-            </div>
-          <!-- CARD #3 -->
-            <div class="card">
-              <div class="card-header">
                 <h4>Software Design and Implementation Teaching Assistant<span class="job-title">August 2018 - December 2018</span></h4>
               </div>
               <div class="card-content">
@@ -422,7 +441,7 @@
                 </ul>
               </div>
             </div>
-          <!-- CARD #4 -->
+          <!-- CARD #3 -->
             <div class="card">
               <div class="card-header">
                 <h4>First-year Student Mentor <span class="job-title">August 2018 - December 2018</span></h4>
@@ -430,12 +449,35 @@
               <div class="card-content">
                 <ul>
                   <li>Assist social and academic integration of 15 freshmen into college atmosphere through weekly seminars</li>
-                  <li>Workshop with students on time management, study skills, and team building</li>
+                  <li>Workshop with students on skills such as time management, study skills, and team building</li>
                 </ul>
               </div>
             </div>
-          <!-- CARD #X -->
-
+          <!-- CARD #4 -->
+            <div class="card">
+              <div class="card-header">
+                <h4>Peer Advisor <span class="job-title">Jan 2019 - Present</span></h4>
+              </div>
+              <div class="card-content">
+                <ul>
+                  <li>TBD</li>
+                  <li>TBD</li>
+                </ul>
+              </div>
+            </div>
+          <!-- CARD #5 -->
+            <div class="card">
+              <div class="card-header">
+                <h4>Mathematics Department Grader<span class="job-title">Jan 2019 - Present</span></h4>
+              </div>
+              <div class="card-content">
+                <ul>
+                  <li>TBD</li>
+                  <li>TBD</li>
+                </ul>
+              </div>
+            </div>
+          <!-- CARD #6 
             <div class="card">
               <div class="card-header">
                 <h4>Company <span class="job-title">Job Title</span></h4>
@@ -443,7 +485,7 @@
               <div class="card-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
         <div class="side-content"></div>
