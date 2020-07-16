@@ -16,6 +16,7 @@ body {
   width: 100%; /* Full width */
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .navbar a {
@@ -200,6 +201,7 @@ h4 {
   display: block;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  width: 250px;
 }
 
 .project-content {
@@ -304,4 +306,15 @@ h4 {
 
 li:not(:last-child) {
     margin-bottom: 5px;
+}
+
+a.button {
+  background-color: #1a535c; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
